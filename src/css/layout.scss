@@ -1,0 +1,53 @@
+#app {
+  width: 1024px;
+  font-size: 16px;
+  padding: 32px 42px;
+  margin: 0;
+  ul, li {
+    list-style: none;
+  }
+}
+
+$space: 1px;
+
+.d-flex {
+  display: flex;
+}
+.flex {
+  &-row {
+    flex-direction: row;
+  }
+  &-column {
+    flex-direction: column;
+  }
+  &-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.justify-content {
+  &-center {
+    justify-content: center;
+  }
+  &-between {
+    justify-content: space-between;
+  }
+  &-end {
+    justify-content: flex-end;
+  }
+}
+
+.align-items {
+  &-center {
+    align-items: center;;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-16 {
+  padding-top: 16*$space;
+  padding-bottom: 16*$space;
+}

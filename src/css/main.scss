@@ -1,0 +1,146 @@
+@import './layout.scss';
+
+
+
+.header {
+  width: 940px;
+  .logo {
+    height: 40px;
+  }
+
+  .nav {
+    li {
+      font: normal normal 600 16px/73px PingFang TC;
+      color: #3F5D45;
+      padding-right: 60px;
+      &:last-child {
+        padding: 0 0 0 20px;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
+
+
+.banner {
+  width: 940px;
+}
+
+.content {
+  width: 940px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  .sidebar {
+    flex-shrink: 0;
+    width: 300px;
+    font: normal normal 600 24px/40px PingFang TC;
+    div {
+      display: flex;
+      justify-content: center;
+      padding: 16*$space 0;
+      color: #3F5D45;
+      border: 1px solid #EAF0ED;
+      border-top: 0;
+      letter-spacing: 3px;
+      &.title {
+        background: #3F5D45 0% 0% no-repeat padding-box;
+        color: white;
+      }
+      &.active {
+        background: #EAF0ED 0% 0% no-repeat padding-box;
+      }
+      &.item {
+        cursor: pointer;
+      }
+    }
+  }
+  .card-group {
+    .card {
+      width: 300px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      &-title {
+        position: relative;
+        height: 315px;
+        img {
+          width: 300px;
+          height: 315px;
+        }
+        .tag {
+          padding: 10px 0;
+          position: absolute;
+          top: 0;
+          left: 20px;
+          width: 36px;
+          background: #3F5D45 0% 0% no-repeat padding-box;
+          span {
+            writing-mode: vertical-lr;
+            font: normal normal 600 16px/20px PingFang TC;
+            letter-spacing: 3px;
+            color: #EAF0ED;
+          }
+        }
+        .favor {
+          position: absolute;
+          top: 20*$space;
+          right: 20*$space;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      &-body {
+        color: #3F5D45;
+        .info {
+          font: normal normal 300 20px/20px PingFang TC;
+          border: 1px solid #EAF0ED;
+          border-top: 0;
+          .name {
+            padding: 12px 33px;
+            border-right: 1px solid #EAF0ED;
+          }
+          .price {
+            padding: 12px 0;
+            font-weight: 600;
+            margin-left: auto;
+            padding-right: 20px;
+          }
+        }
+        .button {
+          background: #EAF0ED 0% 0% no-repeat padding-box;
+          border: 1px solid #EAF0ED;
+          font: normal normal 600 24px/20px PingFang TC;
+          padding: 16px 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .pagination {
+    .item {
+      border: 1px solid #3F5D45;
+      border-right: 0;
+      &:last-child{
+        border-right: 1px solid #3F5D45;
+      }
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &.active {
+        color: white;
+        background: #3F5D45 0% 0% no-repeat padding-box;
+      }
+    }
+  }
+}
+
+.footer {
+  height: 116px;
+/* UI Properties */
+background: #3F5D45 0% 0% no-repeat padding-box;
+}
