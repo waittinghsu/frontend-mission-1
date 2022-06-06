@@ -1,3 +1,223 @@
 body {
   font-family: sans-serif;
 }
+
+#app {
+  width: 1024px;
+  font-size: 16px;
+  padding: 32px 42px;
+  margin: 0;
+
+}
+
+#app ul,
+li {
+  list-style: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+
+.align-items-center {
+  align-items: center;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+
+.header {
+  width: 940px;
+}
+
+.header .logo {
+  height: 40px;
+}
+
+.nav li {
+  font: normal normal 600 16px/73px PingFang TC;
+  color: #3F5D45;
+  padding-right: 60px;
+
+}
+
+.nav li:last-child {
+  padding: 0 0 0 20px;
+
+}
+
+.nav li:last-child img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+.banner {
+  width: 940px;
+}
+
+.content {
+  width: 940px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.content .card-group .card {
+  width: 300px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.content .card-group .card-title {
+  position: relative;
+  height: 315px;
+}
+
+.content .card-group .card-title img {
+  width: 300px;
+  height: 315px;
+}
+
+.content .card-group .card-title .tag {
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 36px;
+  background: #3F5D45 0% 0% no-repeat padding-box;
+}
+
+.content .card-group .card-body {
+  color: #3F5D45;
+}
+
+.content .card-group .card-body .info {
+  font: normal normal 300 20px/20px PingFang TC;
+  border: 1px solid #EAF0ED;
+  border-top: 0;
+}
+
+.content .card-group .card-body .info .name {
+  padding: 12px 33px;
+  border-right: 1px solid #EAF0ED;
+}
+
+.content .card-group .card-body .info .price {
+  padding: 12px 0;
+  font-weight: 600;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.content .card-group .card-body .button {
+  background: #EAF0ED 0% 0% no-repeat padding-box;
+  border: 1px solid #EAF0ED;
+  font: normal normal 600 24px/20px PingFang TC;
+  padding: 16px 0;
+  cursor: pointer;
+}
+
+.content .card-group .card-title .tag span {
+  writing-mode: vertical-lr;
+  font: normal normal 600 16px/20px PingFang TC;
+  letter-spacing: 3px;
+  color: #EAF0ED;
+}
+
+.content .card-group .card-title .favor {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.content .sidebar {
+  flex-shrink: 0;
+  width: 300px;
+  font: normal normal 600 24px/40px PingFang TC;
+}
+
+.content .sidebar div {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+  color: #3F5D45;
+  border: 1px solid #EAF0ED;
+  border-top: 0;
+  letter-spacing: 3px;
+}
+
+.content .sidebar div.title {
+  background: #3F5D45 0% 0% no-repeat padding-box;
+  color: white;
+}
+
+.content .sidebar div.active {
+  background: #EAF0ED 0% 0% no-repeat padding-box;
+}
+
+.content .sidebar div.item {
+  cursor: pointer;
+}
+
+.content .pagination .item {
+  border: 1px solid #3F5D45;
+  border-right: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content .pagination .item:last-child {
+  border-right: 1px solid #3F5D45;
+}
+
+.content .pagination .item.active {
+  color: white;
+  background: #3F5D45 0% 0% no-repeat padding-box;
+}
+
+.footer {
+  height: 116px;
+  /* UI Properties */
+  background: #3F5D45 0% 0% no-repeat padding-box;
+}
